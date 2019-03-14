@@ -5,6 +5,67 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1{
-	font-family: "Fedra Serif Arabic Bold";
+hr{
+	margin: 40px 0 40px;
 }
+
+/*English Typography*/
+body{
+	color: #382F34;
+}
+
+h1{
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 38px;
+}
+
+h2{
+	font-family: "Fedra Serif Arabic Medium", Times, serif;
+	font-size: 30px;
+}
+
+h3{
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 20px;
+}
+
+h4{
+	font-family: "Fedra Serif A Book Italic", Times, serif;
+	font-size: 20px;
+	color: #BF4242;
+}
+
+.ar h4{
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 20px;
+	color: #BF4242;
+}
+
+h5{
+	font-family: "Fedra Sans Arabic Bold", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #5C2946;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+p.lead {
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 24px;	
+}
+
+p{
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 18px;
+}
+
+h6 {
+	font-family: "Fedra Sans Arabic Book", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.ar{
+	direction:rtl;
+	text-align:right;
+}
+
