@@ -81,6 +81,8 @@ h6 {
 	text-align:right;
 }
 
+/*Header*/
+
 .header{
 	background-color: var(--maincolor);
 }
@@ -107,6 +109,8 @@ h6 {
 	border-bottom: 2px solid var(--highlight);
 }
 
+/*Content*/
+
 .white-box{
 	background-color: white;
 	box-shadow: 0 0 28px -6px rgba(34,14,25,0.60);
@@ -118,8 +122,10 @@ h6 {
 	padding-bottom: 17px;
 }
 
+/*Home*/
+
 .intro img{
-	padding-top: 69px;
+	padding-top: 49px;
 }
 
 .intro h4{
@@ -135,7 +141,11 @@ h6 {
 
 .updates {
 	border-left: 1px solid var(--lightgrey);
-	padding: 69px 0 69px 30px;
+	padding: 49px 0 49px 30px;
+}
+
+.updates .lnr{
+	margin-left: 10px;
 }
 
 .text-muted:hover{
@@ -151,6 +161,7 @@ h6 {
     border-radius: 0;
     max-height: 288px;
     filter: saturate(50%);
+    transition: 0.3s;
 }
 
 .card-img-top:hover {
@@ -176,6 +187,20 @@ h6.card-text{
 	padding-top: 35px;
 	border-left: 1px solid var(--lightgrey);
 }
+
+.entry-points:first-child {
+	border-left: none;
+}
+
+.footer{
+	height: 133px;
+	background-color: var(--text);
+}
+
+.footer h5{
+	color: white;
+}
+
 
 
 
