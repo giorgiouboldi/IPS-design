@@ -1,19 +1,19 @@
 /*Colors*/
 :root {
-  --text: #382F34;
-  --sidemenu: #2F1725;
-  --maincolor: #5C2946;
-  --highlight:#BF4242;
-  --grey:#B9B7B2;
-  --lightgrey:#E3E1DC;
+	--text: #382F34;
+	--sidemenu: #2F1725;
+	--maincolor: #5C2946;
+	--highlight:#BF4242;
+	--grey:#B9B7B2;
+	--lightgrey:#E3E1DC;
 }
 
 html,
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  background-color: var(--maincolor);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	background-color: var(--maincolor);
 }
 
 hr{
@@ -81,16 +81,34 @@ h6 {
 	text-align:right;
 }
 
+a {
+	color: var(--maincolor);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: var(--highlight);
+	text-decoration: none;
+	border-bottom: 1px solid var(--highlight);
+}
+
 /*Header*/
 
 .header{
 	background-color: var(--maincolor);
+	z-index: 1;
 }
 
 .header .lnr{
 	font-size: 20px;
 	color: white;
 	padding-left: 10px;
+}
+
+.menu-icon:hover, .header-logo:hover{
+	text-decoration: none!important;
+	border:none;
 }
 
 .header .language{
@@ -115,6 +133,7 @@ h6 {
 	background-color: white;
 	box-shadow: 0 0 28px -6px rgba(34,14,25,0.60);
 	margin: 0 17px 17px;
+	z-index: 0;
 }
 
 .white-box .home {
@@ -148,32 +167,28 @@ h6 {
 	margin-left: 10px;
 }
 
-.text-muted:hover{
-	text-decoration: none;
-}
-
 .card{
 	border: none;
 }
 
 .card-img-top {
-    width: 100%;
-    border-radius: 0;
-    max-height: 288px;
-    filter: saturate(50%);
-    transition: 0.3s;
+	width: 100%;
+	border-radius: 0;
+	max-height: 288px;
+	filter: saturate(50%);
+	transition: 0.3s;
 }
 
 .card-img-top:hover {
-    filter: saturate(100%);
+	filter: saturate(100%);
 }
 
 .card-body {
-    padding: 20px 0;
+	padding: 20px 0;
 }
 
 .card-title {
-    margin-bottom: .5rem;
+	margin-bottom: .5rem;
 }
 
 h6.card-text{
@@ -201,6 +216,45 @@ h6.card-text{
 	color: white;
 }
 
+
+/*Sidemenu*/
+#sidemenu{
+	width:500px;
+	background-color: var(--sidemenu);
+	box-shadow: 10px 2px 19px 4px rgba(0,0,0,0.21);
+	position: fixed;
+	height: 100vh;
+	z-index: 2;
+	transform: translateX(-100%);
+	transition: transform 1s;
+	padding: 30px;
+}
+
+#sidemenu.open{
+	transform: translateX(0%);
+}
+
+#sidemenu nav{
+	padding: 30px 0 0 60px;
+}
+
+nav ul  {
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li h2{
+	font-family: "Fedra Serif Arabic Medium", Times, serif;
+	font-size: 20px;
+	color: white;
+	padding-top: 15px;
+	text-decoration: underline;
+}
+
+nav ul li h6{
+	font-size:16px;
+	color: white;
+}
 
 
 
