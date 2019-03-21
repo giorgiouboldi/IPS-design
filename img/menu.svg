@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="42px" viewBox="0 0 39 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Menu/Open/EN</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header" transform="translate(1.000000, 0.000000)">
+            <g id="Menu/Open">
+                <g id="Group">
+                    <path d="M0,0.8808 L36.6929394,0.8808" id="Line" stroke="#FFFFFF" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <path d="M0,9.8808 L36.6929394,9.8808" id="Line-Copy" stroke="#FFFFFF" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <path d="M0,19.8808 L36.6929394,19.8808" id="Line-Copy-2" stroke="#FFFFFF" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <text id="MENU" font-family="FedraSansStd-Bold, Fedra Sans Std" font-size="10" font-weight="bold" letter-spacing="1" fill="#FFFFFF">
+                        <tspan x="0.545" y="41">MENU</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

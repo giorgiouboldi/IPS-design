@@ -1,8 +1,19 @@
+/*Colors*/
+:root {
+  --text: #382F34;
+  --sidemenu: #2F1725;
+  --maincolor: #5C2946;
+  --highlight:#BF4242;
+  --grey:#B9B7B2;
+  --lightgrey:#E3E1DC;
+}
+
 html,
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background-color: var(--maincolor);
 }
 
 hr{
@@ -11,7 +22,7 @@ hr{
 
 /*English Typography*/
 body{
-	color: #382F34;
+	color: var(--text)
 }
 
 h1{
@@ -27,24 +38,25 @@ h2{
 h3{
 	font-family: "Fedra Serif Arabic Book", Times, serif;
 	font-size: 20px;
+	line-height: 1.4;
 }
 
 h4{
 	font-family: "Fedra Serif A Book Italic", Times, serif;
 	font-size: 20px;
-	color: #BF4242;
+	line-height: 1.4;
+	color: var(--highlight);
 }
 
 .ar h4{
 	font-family: "Fedra Serif Arabic Book", Times, serif;
 	font-size: 20px;
-	color: #BF4242;
 }
 
 h5{
 	font-family: "Fedra Sans Arabic Bold", Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color: #5C2946;
+	color: var(--maincolor);
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -68,4 +80,107 @@ h6 {
 	direction:rtl;
 	text-align:right;
 }
+
+.header{
+	background-color: var(--maincolor);
+}
+
+.header .lnr{
+	font-size: 20px;
+	color: white;
+	padding-left: 10px;
+}
+
+.header .language{
+	font-family: "Fedra Sans Arabic Book", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	margin-right: 20px;
+}
+
+.language:hover{
+	text-decoration: none;
+	border-bottom: 2px solid var(--highlight);
+}
+
+.language.active{
+	border-bottom: 2px solid var(--highlight);
+}
+
+.white-box{
+	background-color: white;
+	box-shadow: 0 0 28px -6px rgba(34,14,25,0.60);
+	margin: 0 17px 17px;
+}
+
+.white-box .home {
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+
+.intro img{
+	padding-top: 69px;
+}
+
+.intro h4{
+	margin-top:40px;
+	color: var(--text)
+}
+
+.intro .lnr {
+	position: relative;
+	font-size: 20px;
+	top: 4px;
+}
+
+.updates {
+	border-left: 1px solid var(--lightgrey);
+	padding: 69px 0 69px 30px;
+}
+
+.text-muted:hover{
+	text-decoration: none;
+}
+
+.card{
+	border: none;
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 0;
+    max-height: 288px;
+    filter: saturate(50%);
+}
+
+.card-img-top:hover {
+    filter: saturate(100%);
+}
+
+.card-body {
+    padding: 20px 0;
+}
+
+.card-title {
+    margin-bottom: .5rem;
+}
+
+h6.card-text{
+	padding-top: 5px;
+}
+
+.entry-points{
+	font-family: "Fedra Serif Arabic Medium", Times, serif;
+	font-size: 20px;
+	vertical-align: middle;
+	padding-top: 35px;
+	border-left: 1px solid var(--lightgrey);
+}
+
+
+
+
+
+
+
 
