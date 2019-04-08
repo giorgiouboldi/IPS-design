@@ -93,6 +93,76 @@ a:hover {
 	border-bottom: 1px solid var(--highlight);
 }
 
+/*Button and recurrent UI*/
+
+.btn {
+	border-radius: 40px;
+	border-color: var(--maincolor);
+	font-family: "Fedra Sans Arabic Bold", Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: .5rem 2rem;
+	opacity: 0.9;
+}
+
+.btn-sm{
+	padding: .275rem .75rem;
+	font-size: 12px;
+}
+
+.btn-lg{
+	padding: 1rem 1rem;
+}
+
+.btn-primary:hover {
+	background-color: var(--maincolor);
+	opacity: 1;
+	border-color: var(--maincolor);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+	color: #fff;
+	border-color: #3F192E;
+	background-color: #3F192E;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+	box-shadow:0 0 0 0.1rem rgb(72, 44, 59, 0.5);
+}
+
+.btn-primary {
+	background-color: var(--maincolor);
+}
+
+.btn.focus, .btn:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.btn-group .btn-primary{
+	background-color: #fff;
+	color: var(--maincolor);
+	border-color: var(--grey);
+}
+
+.nav {
+	border-top: 1px solid var(--lightgrey);
+	border-bottom: 1px solid var(--lightgrey);
+	margin-bottom: 40px;
+	padding: 14px 0 0px;
+}
+
+.nav .nav-item{
+	padding-right: 0px;
+	margin-right: 80px;
+}
+
+.nav .nav-item.active, .nav-item:hover{
+	border-bottom: 1px solid var(--maincolor);
+	padding-bottom: 10px;
+}
+
 /*Header*/
 
 .header{
@@ -207,6 +277,42 @@ h6.card-text{
 	border-left: none;
 }
 
+/*SimplePage*/
+.title-area h2 {
+	padding-top: 49px;
+	padding-bottom: 10px;
+}
+
+/*People*/
+.people-container{
+	margin-top:24px;
+}
+
+.people{
+	margin-bottom: 10px;
+	margin-top:24px;
+}
+
+.people img{
+	height: 75px;
+	margin-right: 10px;
+	filter: saturate(50%);
+}
+
+.people img:hover{
+	filter: saturate(100%);
+}
+
+.people-detail{
+	padding-left:60px;
+}	
+
+.people a, .people a:hover{
+	color: var(--text);
+}
+
+
+/*Footer*/
 .footer{
 	height: 133px;
 	background-color: var(--text);
@@ -255,11 +361,3 @@ nav ul li h6{
 	font-size:16px;
 	color: white;
 }
-
-
-
-
-
-
-
-
