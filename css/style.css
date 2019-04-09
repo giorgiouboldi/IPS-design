@@ -53,7 +53,7 @@ h4{
 	font-size: 20px;
 }
 
-h5{
+h5, label{
 	font-family: "Fedra Sans Arabic Bold", Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: var(--maincolor);
@@ -63,7 +63,7 @@ h5{
 
 p.lead {
 	font-family: "Fedra Serif Arabic Book", Times, serif;
-	font-size: 24px;	
+	font-size: 24px;
 }
 
 p{
@@ -146,11 +146,33 @@ a:hover {
 	border-color: var(--grey);
 }
 
+.dropdown-toggle, .form-control{
+	box-sizing: border-box;
+	border: 1px solid var(--grey);
+	border-radius: 2px;
+	background-color: #fff;
+	color: var(--text);
+	font-family: "Fedra Sans Arabic Book", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-transform: none;
+	text-align: left;
+	height: 50px;
+	padding: .5rem 1rem;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+.lnr-chevron-down, .lnr-magnifier {
+	float: right;
+	padding-top: 5px;
+}
+
 .nav {
-	border-top: 1px solid var(--lightgrey);
 	border-bottom: 1px solid var(--lightgrey);
 	margin-bottom: 40px;
-	padding: 14px 0 0px;
+	padding: 10px 0 0px;
 }
 
 .nav .nav-item{
@@ -281,6 +303,38 @@ h6.card-text{
 .title-area h2 {
 	padding-top: 49px;
 	padding-bottom: 10px;
+	border-bottom: 1px solid var(--lightgrey);
+}
+
+/*Filters and explorers*/
+.filter-horizontal{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--lightgrey);
+}
+
+.filter-overview h6{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	margin-top:14px;
+}
+
+.filter-overview h6 b{
+	font-family: "Fedra Sans Arabic Bold", Arial, Helvetica, sans-serif;
+}
+
+
+
+.form-check label{
+	font-family: "Fedra Sans Arabic Book", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: none;
+	color: var(--text);
+}
+
+.news-container {
+	margin-top:8px;
 }
 
 /*People*/
@@ -305,7 +359,7 @@ h6.card-text{
 
 .people-detail{
 	padding-left:60px;
-}	
+}
 
 .people a, .people a:hover{
 	color: var(--text);
@@ -316,6 +370,7 @@ h6.card-text{
 .footer{
 	height: 133px;
 	background-color: var(--text);
+	margin-top: 60px;
 }
 
 .footer h5{
