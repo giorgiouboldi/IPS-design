@@ -1,0 +1,416 @@
+/*Colors*/
+:root {
+	--text: #382F34;
+	--sidemenu: #2F1725;
+	--maincolor: #5C2946;
+	--highlight:#BF4242;
+	--grey:#B9B7B2;
+	--lightgrey:#E3E1DC;
+}
+
+html,
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	background-color: var(--maincolor);
+}
+
+hr{
+	margin: 40px 0 40px;
+}
+
+/*English Typography*/
+body{
+	color: var(--text)
+}
+
+h1{
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 38px;
+}
+
+h2{
+	font-family: "Fedra Serif Arabic Medium", Times, serif;
+	font-size: 30px;
+}
+
+h3{
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+h4{
+	font-family: "Fedra Serif A Book Italic", Times, serif;
+	font-size: 20px;
+	line-height: 1.4;
+	color: var(--highlight);
+}
+
+.ar h4{
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 20px;
+}
+
+h5, label{
+	font-family: "Fedra Sans Arabic Bold", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: var(--maincolor);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+p.lead {
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 24px;
+}
+
+p{
+	font-family: "Fedra Serif Arabic Book", Times, serif;
+	font-size: 18px;
+}
+
+h6 {
+	font-family: "Fedra Sans Arabic Book", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.ar{
+	direction:rtl;
+	text-align:right;
+}
+
+a {
+	color: var(--maincolor);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: var(--highlight);
+	text-decoration: none;
+	border-bottom: 1px solid var(--highlight);
+}
+
+/*Button and recurrent UI*/
+
+.btn {
+	border-radius: 40px;
+	border-color: var(--maincolor);
+	font-family: "Fedra Sans Arabic Bold", Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: .5rem 2rem;
+	opacity: 0.9;
+}
+
+.btn-sm{
+	padding: .275rem .75rem;
+	font-size: 12px;
+}
+
+.btn-lg{
+	padding: 1rem 1rem;
+}
+
+.btn-primary:hover {
+	background-color: var(--maincolor);
+	opacity: 1;
+	border-color: var(--maincolor);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+	color: #fff;
+	border-color: #3F192E;
+	background-color: #3F192E;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+	box-shadow:0 0 0 0.1rem rgb(72, 44, 59, 0.5);
+}
+
+.btn-primary {
+	background-color: var(--maincolor);
+}
+
+.btn.focus, .btn:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.btn-group .btn-primary{
+	background-color: #fff;
+	color: var(--maincolor);
+	border-color: var(--grey);
+}
+
+.dropdown-toggle, .form-control{
+	box-sizing: border-box;
+	border: 1px solid var(--grey);
+	border-radius: 2px;
+	background-color: #fff;
+	color: var(--text);
+	font-family: "Fedra Sans Arabic Book", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-transform: none;
+	text-align: left;
+	height: 50px;
+	padding: .5rem 1rem;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+.lnr-chevron-down, .lnr-magnifier {
+	float: right;
+	padding-top: 5px;
+}
+
+.nav {
+	border-bottom: 1px solid var(--lightgrey);
+	margin-bottom: 40px;
+	padding: 10px 0 0px;
+}
+
+.nav .nav-item{
+	padding-right: 0px;
+	margin-right: 80px;
+}
+
+.nav .nav-item.active, .nav-item:hover{
+	border-bottom: 1px solid var(--maincolor);
+	padding-bottom: 10px;
+}
+
+/*Header*/
+
+.header{
+	background-color: var(--maincolor);
+	z-index: 1;
+}
+
+.header .lnr{
+	font-size: 20px;
+	color: white;
+	padding-left: 10px;
+}
+
+.menu-icon:hover, .header-logo:hover{
+	text-decoration: none!important;
+	border:none;
+}
+
+.header .language{
+	font-family: "Fedra Sans Arabic Book", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	margin-right: 20px;
+}
+
+.language:hover{
+	text-decoration: none;
+	border-bottom: 2px solid var(--highlight);
+}
+
+.language.active{
+	border-bottom: 2px solid var(--highlight);
+}
+
+/*Content*/
+
+.white-box{
+	background-color: white;
+	z-index: 0;
+}
+
+.white-box .home {
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+
+/*Home*/
+
+.intro img{
+	padding-top: 49px;
+}
+
+.intro h4{
+	margin-top:40px;
+	color: var(--text)
+}
+
+.intro .lnr {
+	position: relative;
+	font-size: 20px;
+	top: 4px;
+}
+
+.updates {
+	border-left: 1px solid var(--lightgrey);
+	padding: 49px 0 49px 30px;
+}
+
+.updates .lnr{
+	margin-left: 10px;
+}
+
+.card{
+	border: none;
+}
+
+.card-img-top {
+	width: 100%;
+	border-radius: 0;
+	max-height: 288px;
+	filter: saturate(50%);
+	transition: 0.3s;
+}
+
+.card-img-top:hover {
+	filter: saturate(100%);
+}
+
+.card-body {
+	padding: 20px 0;
+}
+
+.card-title {
+	margin-bottom: .5rem;
+}
+
+h6.card-text{
+	padding-top: 5px;
+}
+
+.entry-points{
+	font-family: "Fedra Serif Arabic Medium", Times, serif;
+	font-size: 20px;
+	vertical-align: middle;
+	padding-top: 35px;
+	border-left: 1px solid var(--lightgrey);
+}
+
+.entry-points:first-child {
+	border-left: none;
+}
+
+/*SimplePage*/
+.title-area h2 {
+	padding-top: 49px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--lightgrey);
+}
+
+/*Filters and explorers*/
+.filter-horizontal{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--lightgrey);
+}
+
+.filter-overview h6{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	margin-top:14px;
+}
+
+.filter-overview h6 b{
+	font-family: "Fedra Sans Arabic Bold", Arial, Helvetica, sans-serif;
+}
+
+
+
+.form-check label{
+	font-family: "Fedra Sans Arabic Book", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: none;
+	color: var(--text);
+}
+
+.news-container {
+	margin-top:8px;
+}
+
+/*People*/
+.people-container{
+	margin-top:24px;
+}
+
+.people{
+	margin-bottom: 10px;
+	margin-top:24px;
+}
+
+.people img{
+	height: 75px;
+	margin-right: 10px;
+	filter: saturate(50%);
+}
+
+.people img:hover{
+	filter: saturate(100%);
+}
+
+.people-detail{
+	padding-left:60px;
+}
+
+.people a, .people a:hover{
+	color: var(--text);
+}
+
+
+/*Footer*/
+.footer{
+	height: 133px;
+	background-color: var(--text);
+	margin-top: 60px;
+}
+
+.footer h5{
+	color: white;
+}
+
+
+/*Sidemenu*/
+#sidemenu{
+	width:500px;
+	background-color: var(--sidemenu);
+	box-shadow: 10px 2px 19px 4px rgba(0,0,0,0.21);
+	position: fixed;
+	height: 100vh;
+	z-index: 2;
+	transform: translateX(-100%);
+	transition: transform 1s;
+	padding: 30px;
+}
+
+#sidemenu.open{
+	transform: translateX(0%);
+}
+
+#sidemenu nav{
+	padding: 30px 0 0 60px;
+}
+
+nav ul  {
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li h2{
+	font-family: "Fedra Serif Arabic Medium", Times, serif;
+	font-size: 20px;
+	color: white;
+	padding-top: 15px;
+	text-decoration: underline;
+}
+
+nav ul li h6{
+	font-size:16px;
+	color: white;
+}
